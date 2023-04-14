@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RepositoryUrl>https://github.com/yuriy-butkevych/fabillio-common</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="10.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
+    <PackageReference Include="RavenDB.DependencyInjection" Version="4.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Fabillio.Common.Actors\Fabillio.Common.Actors.csproj" />
+    <ProjectReference Include="..\Fabillio.Common.Events.Abstractions\Fabillio.Common.Events.Abstractions.csproj" />
+    <ProjectReference Include="..\Fabillio.Common.Events\Fabillio.Common.Events.csproj" />
+    <ProjectReference Include="..\Fabillio.Common.Helpers\Fabillio.Common.Helpers.csproj" />
+    <ProjectReference Include="..\Fabillio.Common.Notifications\Fabillio.Common.Notifications.csproj" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	</ItemGroup>
+
+</Project>

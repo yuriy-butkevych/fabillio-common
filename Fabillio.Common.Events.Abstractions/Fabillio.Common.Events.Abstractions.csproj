@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <RepositoryUrl>https://github.com/yuriy-butkevych/fabillio-common</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Fabillio.Common.Helpers\Fabillio.Common.Helpers.csproj" />
+    </ItemGroup>
+
+</Project>

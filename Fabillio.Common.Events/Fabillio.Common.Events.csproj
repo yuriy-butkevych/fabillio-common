@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <RepositoryUrl>https://github.com/yuriy-butkevych/fabillio-common</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Fabillio.Common.Events.Abstractions\Fabillio.Common.Events.Abstractions.csproj" />
+      <ProjectReference Include="..\Fabillio.Common.Messaging\Fabillio.Common.Messaging.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <FrameworkReference Include="Microsoft.AspNetCore.App" />
+        <PackageReference Include="Dapr.AspNetCore" Version="1.10.0" />
+      <PackageReference Include="Dapr.Client" Version="1.10.0" />
+      <PackageReference Include="Microsoft.AspNetCore.Routing" Version="2.2.2" />
+      <PackageReference Include="Microsoft.AspNetCore.Routing.Abstractions" Version="2.2.0" />
+    </ItemGroup>
+
+</Project>
